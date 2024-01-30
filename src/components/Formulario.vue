@@ -29,7 +29,7 @@ const validate = ()=>{
  <div class="PersonalizedName">
   <div>
 
-    <h1>Personaliza tu nombre perro</h1>
+    <h1>Personaliza tu nombre de no más de 40 caracteres:</h1>
     <form >
       
       <input type="text" v-model="nombre"  @input="validate"/>

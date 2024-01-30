@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import Formulario from '../components/Formulario.vue'
 
 </script>
 
 <template>
   <main>
 
-    <TheWelcome />
+    <Formulario />
   </main>
 </template>
