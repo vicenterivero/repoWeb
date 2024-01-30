@@ -8,7 +8,6 @@ const password:Ref<string>= ref('');
 </script>
 <template>
 <div class="login-container">
-  <h2>Iniciar Sesión</h2>
   <form class="login-form">
     <div class="form-group">
       <label for="username">Usuario:</label>

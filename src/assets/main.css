@@ -7,7 +7,13 @@ a,
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
   padding: 3px;
+  border: 1.5px solid black;
+  border-radius: 5px;
 }
+a{
+  margin-right: 5px;
+}
+
 
 @media (hover: hover) {
   a:hover {
@@ -16,14 +22,15 @@ a,
 }
 
 
-.caja{
+.caja {
   border: 3px solid #fff;
   padding: 10px;
   border-radius: 10px;
   min-height: 50px;
   text-align: center;
-  
+
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -69,22 +76,28 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+
 @keyframes cambiaColor {
   0% {
     transform: scale(1);
   }
+
   30% {
     transform: scaleX(1.25) scaleY(0.75);
   }
+
   40% {
     transform: scaleX(0.75) scaleY(1.25);
   }
+
   60% {
     transform: scaleX(1.15) scaleY(0.85);
   }
+
   80% {
     transform: scaleX(0.95) scaleY(1.05);
   }
+
   100% {
     transform: scale(1);
   }
@@ -93,7 +106,8 @@ input[type="submit"]:hover {
 .textoAnimado {
   animation: cambiaColor 4s infinite;
 }
-header{
+
+header {
   display: flex;
   height: 50px;
   align-items: center;
@@ -101,21 +115,36 @@ header{
   padding: 50px 0;
   background-color: #fff;
 }
-img{
-height: 50px;
-width: auto;
+
+
+img {
+  height: 50px;
+  width: auto;
 }
-.PersonalizedName{
+
+.PersonalizedName {
   display: flex;
   flex-direction: row;
   text-align: center;
-width: 100%;
-align-items: center;
-  
+  width: 100%;
+  align-items: center;
+
 }
-.PersonalizedName > :first-child{
+
+.PersonalizedName> :first-child {
   width: 30%;
 }
-.PersonalizedName >:last-child{
+
+.PersonalizedName>:last-child {
   max-width: 50%;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #dadada;
+
 }
