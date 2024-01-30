@@ -1,0 +1,121 @@
+@import './base.css';
+
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+
+.caja{
+  border: 3px solid #fff;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 50px;
+  text-align: center;
+  
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+@keyframes cambiaColor {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+  80% {
+    transform: scaleX(0.95) scaleY(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.textoAnimado {
+  animation: cambiaColor 4s infinite;
+}
+header{
+  display: flex;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+img{
+height: 50px;
+width: auto;
+}
+.PersonalizedName{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+width: 100%;
+align-items: center;
+  
+}
+.PersonalizedName > :first-child{
+  width: 30%;
+}
+.PersonalizedName >:last-child{
+  max-width: 50%;
+}
